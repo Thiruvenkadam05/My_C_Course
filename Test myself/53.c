@@ -1,11 +1,16 @@
-#include<stdio.h>
-main()
-{
-	int a,b;
-	a=3+2,b=a,12;
-
-	printf("a : %d b : %d\n",a,b);
+main(){
+	int A[5] = {5,8,9,6,10} ;
+	int *p, *q;
 	
-	a=(3+2,b=a,12);
-	printf("a : %d b : %d",a,b);
+	p = &A[0]; // or p = A or p = &A 
+	q = &A[3];
+	
+    printf("%d ",++*p);
+    printf(" %d ",*p++);
+    printf(" %d ",*p);
+    
+    printf(" %d ",(*q)++);
+    printf(" %d ",*q);
+    
+
 }
